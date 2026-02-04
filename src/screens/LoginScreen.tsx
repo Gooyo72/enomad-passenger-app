@@ -131,12 +131,14 @@ const LoginScreen = ({ navigation }: any) => {
           refreshToken: auth.refreshToken,
         });
       } else {
-        Alert.alert('Алдаа', response.message || 'Нэвтрэхэд алдаа гарлаа.');
+        const errorMsg = response.message || 'Нэвтрэхэд алдаа гарлаа.';
+        Alert.alert('Алдаа', errorMsg);
+        console.log('Login failed response:', response);
       }
     } catch (error: any) {
+      console.error('Login error detail:', error);
       const errorMessage = error.message || 'Нэвтрэхэд алдаа гарлаа. Та дахин оролдоно уу.';
       Alert.alert('Алдаа', errorMessage);
-      console.error('Login error:', error);
     } finally {
       setLoading(false);
     }

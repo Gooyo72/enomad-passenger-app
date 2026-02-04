@@ -3,7 +3,7 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { UserResponse } from '@api/types';
 
-import { queryClient } from '../../App';
+import { queryClient } from '@api';
 
 interface AuthState {
   user: UserResponse | null;

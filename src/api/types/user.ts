@@ -3,9 +3,8 @@ export interface UserResponse {
   firstName: string;
   lastName: string;
   phone: string;
-  email: string;
-  phoneVerified: boolean;
-  status: string;
+  phoneVerified?: boolean;
+  status?: string;
 }
 
 export interface MeResponse {

@@ -128,7 +128,7 @@ const RegisterScreen = ({ navigation }: any) => {
           <View style={styles.header}>
             <Text style={[typography.h1, { color: colors.text }]}>Бүртгүүлэх</Text>
             <Text style={[typography.caption, { color: colors.textSecondary }]}>
-              Жолоочоор бүртгүүлж, ажлаа эхлээрэй
+              ENomad системд бүртгүүлж, үйлчилгээ аваарай
             </Text>
           </View>
 
