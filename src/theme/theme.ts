@@ -20,11 +20,11 @@ export const COLORS = {
   dark: {
     primary: '#0A84FF',
     secondary: '#5E5CE6',
-    background: '#121212',
-    surface: '#1E1E1E',
+    background: '#121212', // Slightly off-black for better contrast and depth
+    surface: '#1E1E1E',    // Elevate surface color
     text: '#FFFFFF',
     textSecondary: '#EBEBF599',
-    border: '#2C2C2E',
+    border: '#2C2C2E',     // Softer border color
     error: '#FF453A',
     success: '#32D74B',
     warning: '#FF9F0A',
@@ -36,6 +36,9 @@ export const COLORS = {
     extraLightGray: '#1C1C1E',
   },
 };
+
+// For backward compatibility while transitioning
+export const LIGHT_COLORS = COLORS.light;
 
 export const SPACING = {
   xs: 4,
